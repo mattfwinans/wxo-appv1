@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Management</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Vendor Management</h1>
+    <div id="vendor-form">
+        <input type="text" id="vendor" placeholder="Vendor Name">
+        <input type="number" id="price" placeholder="Price">
+        <input type="date" id="date">
+        <button onclick="addVendor()">Add Vendor</button>
+    </div>
+
+    <div id="vendor-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Vendor</th>
+                    <th>Price</th>
+                    <th>Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="vendors-list"></tbody>
+        </table>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
